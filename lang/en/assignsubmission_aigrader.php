@@ -72,7 +72,7 @@ $string['transcript_file_help'] = 'Upload a PDF, Word document, or text file con
 Supported formats: PDF, DOCX, DOC, TXT, ODT
 Maximum file size: 10MB';
 
-$string['transcript_note'] = '<strong>Note:</strong> You can provide course context as text OR as a file. If both are provided, the text version will be used. This helps the AI understand what concepts were taught and grade accordingly.';
+$string['transcript_note'] = 'You can provide course context as text OR as a file. If both are provided, the text version will be used. This helps the AI understand what concepts were taught and grade accordingly.';
 
 // Grading instructions
 $string['custom_prompt'] = 'Custom Grading Instructions';
@@ -102,7 +102,7 @@ Maximum file size: 10MB
 
 This is particularly useful for assignments with specific correct answers or when you want to show what an "A" submission looks like.';
 
-$string['validation_note'] = '<strong>Important:</strong> Either custom grading instructions OR a reference document should be provided for best AI grading results. For rubric-based assignments, the rubric itself may be sufficient.';
+$string['validation_note'] = 'Either custom grading instructions OR a reference document should be provided for best AI grading results. For rubric-based assignments, the rubric itself may be sufficient.';
 
 // Capabilities
 $string['aigrader:configure'] = 'Configure AI auto-grading settings';
@@ -119,6 +119,8 @@ $string['privacy:metadata:local_ai_autograder_config:custom_prompt'] = 'Custom g
 // Events
 $string['event_config_updated'] = 'AI grading configuration updated';
 $string['event_config_updated_desc'] = 'AI grading configuration was updated for assignment {$a}';
+$string['event_submission_graded'] = 'Submission automatically graded by AI';
+$string['event_submission_graded_desc'] = 'A submission was automatically graded by AI';
 
 // Errors
 $string['error_no_local_plugin'] = 'The AI Auto-Grader local plugin (local_ai_autograder) must be installed and enabled.';
@@ -127,3 +129,9 @@ $string['error_saving_config'] = 'Error saving AI grading configuration';
 // Backup/Restore
 $string['backup_config'] = 'Backup AI grading configuration';
 $string['restore_config'] = 'Restore AI grading configuration';
+
+// Settings page
+$string['default'] = 'Enabled by default';
+$string['default_help'] = 'If enabled, AI auto-grading will be enabled by default for all new assignments. Teachers can override this setting for individual assignments.';
+$string['plugin_info'] = 'Plugin Information';
+$string['plugin_info_desc'] = 'This submission plugin integrates with the AI Auto-Grader local plugin to provide AI-powered automatic grading. Global AI settings (API keys, default models) are configured in Site Administration > Plugins > Local plugins > AI Auto-Grader. Assignment-specific settings appear in the assignment settings form when this plugin is enabled. The local_ai_autograder plugin must be installed for this to work.';

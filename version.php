@@ -16,7 +16,7 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version   = 2025101500;
+$plugin->version   = 2025101506;
 $plugin->requires  = 2022112800; // Moodle 4.1
 $plugin->component = 'assignsubmission_aigrader';
 $plugin->maturity  = MATURITY_STABLE;
